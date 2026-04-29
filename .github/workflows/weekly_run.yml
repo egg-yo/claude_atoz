@@ -1,4 +1,4 @@
-name: 🔥 Weekly Meme Trend Bot
+name: Weekly Meme Trend Bot
 
 on:
   schedule:
@@ -20,9 +20,7 @@ jobs:
           python-version: '3.11'
 
       - name: 의존성 설치
-        run: |
-          cd meme_trend_bot
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Playwright Chromium 설치 (TikTok 스크래핑용)
         run: playwright install chromium --with-deps
@@ -30,24 +28,21 @@ jobs:
       - name: 밈 트렌드 봇 실행
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-          CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
-          AI_PROVIDER: claude
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          AI_PROVIDER: gemini
           KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
           KAKAO_CLIENT_SECRET: ${{ secrets.KAKAO_CLIENT_SECRET }}
           KAKAO_REDIRECT_URI: ${{ secrets.KAKAO_REDIRECT_URI }}
-          KAKAO_ACCESS_TOKEN: ${{ secrets.KAKAO_ACCESS_TOKEN }}
           KAKAO_REFRESH_TOKEN: ${{ secrets.KAKAO_REFRESH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
           GITHUB_REPO: ${{ secrets.GITHUB_REPO }}
           GITHUB_BRANCH: gh-pages
-        run: |
-          cd meme_trend_bot
-          python main.py
+        run: python main.py
 
       - name: 생성된 리포트 아티팩트 저장
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: meme-trend-report-${{ github.run_id }}
-          path: meme_trend_bot/archive/
+          path: archive/
           retention-days: 30
