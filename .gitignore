@@ -1,0 +1,20 @@
+# 환경변수 (API 키 포함 — 절대 커밋 금지)
+.env
+
+# 카카오 토큰
+.kakao_tokens.json
+
+# 로그
+*.log
+
+# 생성된 HTML 아카이브 (GitHub Pages 브랜치에서 별도 관리)
+archive/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# macOS
+.DS_Store
