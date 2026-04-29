@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔥 주간 밈 트렌드 2026-W17</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;800&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background: #0f0f13;
+      color: #e8e8f0;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #6c47ff, #ff4fa3);
+      padding: 40px 24px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 800; color: #fff; }
+    header p  { font-size: 0.95rem; color: rgba(255,255,255,0.8); margin-top: 8px; }
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 0.8rem;
+      margin-top: 10px;
+    }
+    main { max-width: 960px; margin: 0 auto; padding: 32px 16px 60px; }
+    .section-title {
+      font-size: 1.3rem; font-weight: 700;
+      margin: 36px 0 16px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .section-title::after {
+      content: ''; flex: 1; height: 1px; background: rgba(255,255,255,0.1);
+    }
+    /* ── TOP 10 카드 ── */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+    .card {
+      background: #1a1a24;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.07);
+      transition: transform .2s, box-shadow .2s;
+      text-decoration: none; color: inherit;
+      display: block;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(108,71,255,0.25); }
+    .card-thumb {
+      width: 100%; aspect-ratio: 16/9; object-fit: cover;
+      background: #2a2a38;
+    }
+    .card-thumb-placeholder {
+      width: 100%; aspect-ratio: 16/9;
+      background: linear-gradient(135deg, #2a2a38, #1e1e2e);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.5rem;
+    }
+    .card-body { padding: 14px 16px; }
+    .card-rank {
+      font-size: 0.7rem; font-weight: 700; color: #6c47ff;
+      text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;
+    }
+    .card-title { font-size: 0.95rem; font-weight: 600; line-height: 1.4; margin-bottom: 10px; }
+    .card-stats {
+      display: flex; gap: 12px;
+      font-size: 0.78rem; color: #8888aa;
+    }
+    .card-stats span { display: flex; align-items: center; gap: 4px; }
+    .card-why {
+      margin-top: 10px;
+      font-size: 0.8rem; color: #aaaacc;
+      line-height: 1.5;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      padding-top: 10px;
+    }
+    .platform-badge {
+      display: inline-block; font-size: 0.68rem; font-weight: 700;
+      padding: 2px 8px; border-radius: 10px; margin-bottom: 6px;
+    }
+    .platform-yt { background: rgba(255,0,0,0.2); color: #ff6060; }
+    .platform-ig { background: rgba(255,79,163,0.2); color: #ff4fa3; }
+    /* ── 분석 섹션 ── */
+    .analysis-box {
+      background: #1a1a24;
+      border-radius: 14px;
+      padding: 22px 24px;
+      border: 1px solid rgba(255,255,255,0.07);
+    }
+    .analysis-box p { line-height: 1.8; color: #ccccde; font-size: 0.93rem; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+    .tag {
+      background: rgba(108,71,255,0.2); color: #a08fff;
+      border-radius: 20px; padding: 5px 14px;
+      font-size: 0.83rem; font-weight: 600;
+    }
+    .tips-list { list-style: none; }
+    .tips-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.9rem; color: #ccccde; line-height: 1.6;
+    }
+    .tips-list li:last-child { border-bottom: none; }
+    .tips-list li::before {
+      content: '✦'; color: #6c47ff;
+      display: inline-block; width: 20px;
+    }
+    .pattern-list { list-style: none; }
+    .pattern-list li {
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.9rem; color: #ccccde;
+    }
+    .pattern-list li::before { content: '→ '; color: #ff4fa3; font-weight: 700; }
+    footer {
+      text-align: center; color: #444; font-size: 0.8rem;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>🔥 주간 밈 트렌드 리포트</h1>
+  <p>인스타그램 릴스 &amp; 유튜브 쇼츠 TOP 10</p>
+  <span class="badge">2026-W17 · 2026년 04월 29일 18:53</span>
+</header>
+
+<main>
+  <!-- TOP 10 카드 그리드 -->
+  <div class="section-title">🏆 TOP 10 이번 주 밈</div>
+  <div class="grid">
+    
+    <a class="card" href="https://www.tiktok.com/@jungkook/video/7617492632305945877" target="_blank" rel="noopener">
+      
+        <img class="card-thumb" src="https://www.tiktok.com/static/images/share-page-logo.png" alt="#JungKook #JK #BTS" loading="lazy">
+      
+      <div class="card-body">
+        <span class="platform-badge platform-ig">
+          TikTok
+        </span>
+        <div class="card-rank"># 1</div>
+        <div class="card-title">#JungKook #JK #BTS</div>
+        <div class="card-stats">
+          <span>👁 74,100,000</span>
+          <span>❤️ 10,000,000</span>
+          <span>💬 363,900</span>
+        </div>
+        
+        <div class="card-why">글로벌 슈퍼스타 정국의 압도적인 팬덤 화력과 K-pop 콘텐츠의 파급력이 결합된 결과입니다. 단순한 영상임에도 불구하고 높은 좋아요와 댓글 수를 기록하며 전 세계적인 바이럴을 형성했습니다.</div>
+        
+      </div>
+    </a>
+    
+    <a class="card" href="https://www.youtube.com/watch?v=7WIpkJvCQVg" target="_blank" rel="noopener">
+      
+        <img class="card-thumb" src="https://img.youtube.com/vi/7WIpkJvCQVg/hqdefault.jpg" alt="Haaland's legs went missing 💀 #football #meme #shorts" loading="lazy">
+      
+      <div class="card-body">
+        <span class="platform-badge platform-yt">
+          YouTube
+        </span>
+        <div class="card-rank"># 2</div>
+        <div class="card-title">Haaland's legs went missing 💀 #football #meme #shorts</div>
+        <div class="card-stats">
+          <span>👁 58,360,157</span>
+          <span>❤️ 158,814</span>
+          <span>💬 110</span>
+        </div>
+        
+        <div class="card-why">축구 스타 홀란드를 활용한 초현실적인 VFX 기술이 시각적 충격을 주었습니다. 언어 장벽이 없는 비주얼 유머와 축구 팬덤의 관심이 폭발적인 조회수로 이어졌습니다.</div>
+        
+      </div>
+    </a>
+    
+    <a class="card" href="https://www.youtube.com/watch?v=APlliHPN_l8" target="_blank" rel="noopener">
+      
+        <img class="card-thumb" src="https://img.youtube.com/vi/APlliHPN_l8/hqdefault.jpg" alt="Aaj to sab ulta pad gaya 😂 #shorts #minivlog #familyvlog" loading="lazy">
+      
+      <div class="card-body">
+        <span class="platform-badge platform-yt">
+          YouTube
+        </span>
+        <div class="card-rank"># 3</div>
+        <div class="card-title">Aaj to sab ulta pad gaya 😂 #shorts #minivlog #familyvlog</div>
+        <div class="card-stats">
+          <span>👁 22,987,812</span>
+          <span>❤️ 127,594</span>
+          <span>💬 68</span>
+        </div>
+        
+        <div class="card-why">가족들의 일상 속 코믹한 순간을 담은 미니 브이로그로 글로벌 시청자들의 공감을 샀습니다. 가벼운 웃음을 주는 짧은 서사 구조가 쇼츠 형식에 최적화되었습니다.</div>
+        
+      </div>
+    </a>
+    
+    <a class="card" href="https://www.youtube.com/watch?v=ixE_iBfF4uU" target="_blank" rel="noopener">
+      
+        <img class="card-thumb" src="https://img.youtube.com/vi/ixE_iBfF4uU/hqdefault.jpg" alt="Chote Bhai Ko Marega 😡🔥 || #foryou #viral #shorts" loading="lazy">
+      
+      <div class="card-body">
+        <span class="platform-badge platform-yt">
+          YouTube
+        </span>
+        <div class="card-rank"># 4</div>
+        <div class="card-title">Chote Bhai Ko Marega 😡🔥 || #foryou #viral #shorts</div>
+        <div class="card-stats">
+          <span>👁 22,172,906</span>
+          <span>❤️ 326,676</span>
+          <span>💬 1,552</span>
+        </div>
+        
+        <div class="card-why">형제간의 의리와 가족애를 강조한 드라마틱한 연출이 높은 감정적 몰입도를 이끌어냈습니다. 'Attitude' 스타일의 강렬한 배경음악과 자극적인 갈등 구조가 특징입니다.</div>
+        
+      </div>
+    </a>
+    
+    <a class="card" href="https://www.youtube.com/watch?v=Uk_fCQSfHj4" target="_blank" rel="noopener">
+      
+        <img class="card-thumb" src="https://img.youtube.com/vi/Uk_fCQSfHj4/hqdefault.jpg" alt="Show some kindness to everyone ❤️‍🩹 #kdrama #cdrama" loading="lazy">
+      
+      <div class="card-body">
+        <span class="platform-badge platform-yt">
+          YouTube
+        </span>
+        <div class="card-rank"># 5</div>
+        <div class="card-title">Show some kindness to everyone ❤️‍🩹 #kdrama #cdrama</div>
+        <div class="card-stats">
+          <span>👁 20,399,065</span>
+          <span>❤️ 322,821</span>
+          <span>💬 2,748</span>
+        </div>
+        
+        <div class="card-why">K-드라마의 감동적인 장면을 편집하여 인류애와 친절을 강조하는 메시지가 큰 울림을 주었습니다. 감성적인 편집과 드라마 팬덤의 적극적인 공유가 돋보입니다.</div>
+        
+      </div>
+    </a>
+    
+    <a class="card" href="https://www.youtube.com/watch?v=L-Sx9b3gjuY" target="_blank" rel="noopener">
+      
+        <img class="card-thumb" src="https://img.youtube.com/vi/L-Sx9b3gjuY/hqdefault.jpg" alt="His Atoms stucked halfway. | #shorts #memes" loading="lazy">
+      
+      <div class="card-body">
+        <span class="platform-badge platform-yt">
+          YouTube
+        </span>
+        <div class="card-rank"># 6</div>
+        <div class="card-title">His Atoms stucked halfway. | #shorts #memes</div>
+        <div class="card-stats">
+          <span>👁 19,696,364</span>
+          <span>❤️ 171,136</span>
+          <span>💬 4,501</span>
+        </div>
+        
+        <div class="card-why">물리학적 법칙을 무시한 듯한 기괴하고 유머러스한 로우폴리 애니메이션이 호기심을 자극했습니다. 짧고 강렬한 루프 형태의 영상이 반복 시청을 유도했습니다.</div>
+        
+      </div>
+    </a>
+    
+    <a class="card" href="https://www.youtube.com/watch?v=URiibF6Nvzo" target="_blank" rel="noopener">
+      
+        <img class="card-thumb" src="https://img.youtube.com/vi/URiibF6Nvzo/hqdefault.jpg" alt="MEME OF THE ABYSS - POPPY PLAYTIME CHAPTER 5" loading="lazy">
+      
+      <div class="card-body">
+        <span class="platform-badge platform-yt">
+          YouTube
+        </span>
+        <div class="card-rank"># 7</div>
+        <div class="card-title">MEME OF THE ABYSS - POPPY PLAYTIME CHAPTER 5</div>
+        <div class="card-stats">
+          <span>👁 19,682,826</span>
+          <span>❤️ 77,184</span>
+          <span>💬 106</span>
+        </div>
+        
+        <div class="card-why">인기 게임인 '포피 플레이타임'의 캐릭터를 활용한 2차 창작물로, 팬들의 기대를 충족시켰습니다. 게임의 유명도와 미스터리한 분위기가 잘 어우러진 사례입니다.</div>
+        
+      </div>
+    </a>
+    
+    <a class="card" href="https://www.youtube.com/watch?v=dTKn_WmKFgU" target="_blank" rel="noopener">
+      
+        <img class="card-thumb" src="https://img.youtube.com/vi/dTKn_WmKFgU/hqdefault.jpg" alt="TINGKAH LUCU BOCIL 😆 #funny #funnyvideo" loading="lazy">
+      
+      <div class="card-body">
+        <span class="platform-badge platform-yt">
+          YouTube
+        </span>
+        <div class="card-rank"># 8</div>
+        <div class="card-title">TINGKAH LUCU BOCIL 😆 #funny #funnyvideo</div>
+        <div class="card-stats">
+          <span>👁 18,533,613</span>
+          <span>❤️ 45,173</span>
+          <span>💬 86</span>
+        </div>
+        
+        <div class="card-why">아이들의 엉뚱하고 귀여운 행동을 담은 영상은 전 세계적으로 스테디셀러인 콘텐츠입니다. 자막 없이도 웃음을 줄 수 있는 상황 기반 유머가 강점입니다.</div>
+        
+      </div>
+    </a>
+    
+    <a class="card" href="https://www.youtube.com/watch?v=TyhF3xfiIPU" target="_blank" rel="noopener">
+      
+        <img class="card-thumb" src="https://img.youtube.com/vi/TyhF3xfiIPU/hqdefault.jpg" alt="Giant Mystery Object on Highway #viral #mystery" loading="lazy">
+      
+      <div class="card-body">
+        <span class="platform-badge platform-yt">
+          YouTube
+        </span>
+        <div class="card-rank"># 9</div>
+        <div class="card-title">Giant Mystery Object on Highway #viral #mystery</div>
+        <div class="card-stats">
+          <span>👁 17,333,316</span>
+          <span>❤️ 89,899</span>
+          <span>💬 2,526</span>
+        </div>
+        
+        <div class="card-why">도로 위 거대하고 정체불명인 물체를 보여주며 시청자의 호기심과 긴장감을 극대화했습니다. '미스터리'와 '충격'이라는 키워드가 쇼츠 알고리즘의 선택을 받았습니다.</div>
+        
+      </div>
+    </a>
+    
+    <a class="card" href="https://www.tiktok.com/@user511982103872/video/7601459515820756255" target="_blank" rel="noopener">
+      
+        <img class="card-thumb" src="https://www.tiktok.com/static/images/share-page-logo.png" alt="#gunungsemerulumajang #gunungsemerumeletus" loading="lazy">
+      
+      <div class="card-body">
+        <span class="platform-badge platform-ig">
+          TikTok
+        </span>
+        <div class="card-rank"># 10</div>
+        <div class="card-title">#gunungsemerulumajang #gunungsemerumeletus</div>
+        <div class="card-stats">
+          <span>👁 12,300,000</span>
+          <span>❤️ 1,100,000</span>
+          <span>💬 8,393</span>
+        </div>
+        
+        <div class="card-why">실제 화산 폭발이라는 압도적인 자연재해 현장을 포착하여 시청각적인 경외감을 주었습니다. 실시간 뉴스 가치가 높은 영상으로 틱톡 내에서 빠르게 확산되었습니다.</div>
+        
+      </div>
+    </a>
+    
+  </div>
+
+  <!-- 트렌드 분석 -->
+  <div class="section-title">📊 이번 주 트렌드 분석</div>
+  <div class="analysis-box">
+    <p>이번 주는 초현실적인 비주얼을 구현한 VFX 기술 기반의 유머 영상과 K-팝 스타의 영향력이 동시에 두드러졌습니다. 정국(BTS)과 같은 메가 IP는 여전히 플랫폼을 불문하고 최고의 화제성을 보여주며, Haaland의 다리 분실 밈처럼 기술력이 가미된 창의적 콘텐츠가 상위권을 차지했습니다. 또한, '위고비' 다이어트나 숏폼 드라마 형식의 광고성 콘텐츠가 한국 시장에서 점차 주류로 자리 잡고 있습니다. 이는 단순 재미를 넘어 정보와 서사를 결합한 숏폼의 진화 단계로 분석됩니다.</p>
+  </div>
+
+  <!-- 공통점 -->
+  <div class="section-title">🔗 공통 패턴</div>
+  <div class="analysis-box">
+    <ul class="pattern-list">
+      
+      <li>시각적 트릭 및 고퀄리티 VFX/CGI 활용</li>
+      
+      <li>언어 장벽이 없는 상황극 및 동물/아이 중심 유머</li>
+      
+      <li>K-팝 스타 및 유명 드라마 IP의 재가공</li>
+      
+      <li>호기심을 유도하는 미스터리 및 자연 현상 포착</li>
+      
+      <li>가족애, 형제애 등 감정적 울림을 주는 짧은 드라마</li>
+      
+    </ul>
+  </div>
+
+  <!-- 핫 키워드 -->
+  <div class="section-title">🏷️ 이번 주 핫 키워드</div>
+  <div class="analysis-box">
+    <div class="tag-list">
+      
+      <span class="tag"># 정국</span>
+      
+      <span class="tag"># VFX밈</span>
+      
+      <span class="tag"># 숏드라마</span>
+      
+      <span class="tag"># 랜덤챌린지</span>
+      
+      <span class="tag"># 위고비</span>
+      
+    </div>
+  </div>
+
+  <!-- 콘텐츠 제작 팁 -->
+  <div class="section-title">💡 콘텐츠 제작 인사이트</div>
+  <div class="analysis-box">
+    <ul class="tips-list">
+      
+      <li>첫 3초 안에 시각적으로 불가능해 보이는 장면(VFX 등)을 배치하여 시선을 끄세요.</li>
+      
+      <li>자막 없이도 이해 가능한 글로벌 공용 유머 소재를 활용하세요.</li>
+      
+      <li>유명 스타나 인기 게임 캐릭터의 요소를 챌린지에 접목하세요.</li>
+      
+      <li>가족, 친구와의 공감형 상황극을 제작하여 댓글 반응을 유도하세요.</li>
+      
+      <li>최신 건강/라이프스타일 유행 키워드(예: 위고비, 텍스처팩)를 신속하게 선점하세요.</li>
+      
+    </ul>
+  </div>
+</main>
+
+<footer>
+  🤖 자동 생성 — 2026년 04월 29일 18:53 · Meme Trend Bot
+</footer>
+</body>
+</html>
